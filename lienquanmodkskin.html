@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bio Link - Công Hùng</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 30px;
+            overflow: hidden;
+            width: 100%;
+            max-width: 900px;
+            box-shadow: 0 25px 50px rgba(0,0,0,0.5);
+        }
+
+        /* Phần bên trái: Thông tin cá nhân */
+        .profile-side {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 40px;
+            flex: 1;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border-right: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .avatar-wrapper {
+            position: relative;
+            width: 120px;
+            height: 120px;
+            margin-bottom: 20px;
+        }
+
+        .avatar-wrapper img {
+            width: 100%;
+            height: 100%;
+            border-radius: 20px; /* Bo góc vuông thay vì hình tròn để tạo nét hiện đại */
+            object-fit: cover;
+            border: 2px solid #7f5af0;
+        }
+
+        .verified-badge {
+            position: absolute;
+            bottom: -5px;
+            right: -5px;
+            color: #3897f0;
+            background: white;
+            border-radius: 50%;
+            padding: 2px;
+            font-size: 18px;
+        }
+
+        .profile-side h1 {
+            font-size: 28px;
+            margin-bottom: 5px;
+            color: #fffffe;
+        }
+
+        .profile-side p {
+            color: #94a1b2;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        /* Phần bên phải: Danh sách liên kết */
+        .links-side {
+            flex: 1.5;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .link-card {
+            display: flex;
+            align-items: center;
+            padding: 15px 20px;
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 15px;
+            text-decoration: none;
+            color: white;
+            transition: all 0.3s ease;
+            border: 1px solid transparent;
+        }
+
+        .link-card:hover {
+            background: rgba(127, 90, 240, 0.2);
+            border-color: #7f5af0;
+            transform: translateX(10px);
+        }
+
+        .link-card i {
+            font-size: 20px;
+            margin-right: 15px;
+            width: 30px;
+            text-align: center;
+            color: #7f5af0;
+        }
+
+        .link-text h3 {
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        /* Responsive cho điện thoại */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            .profile-side {
+                text-align: center;
+                align-items: center;
+                border-right: none;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            }
+            .link-card:hover {
+                transform: translateY(-5px);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Bên trái -->
+        <div class="profile-side">
+            <div class="avatar-wrapper">
+                <img src="anh1.img" alt="Avatar">
+                <i class="fas fa-check-circle verified-badge"></i>
+            </div>
+            <h1>Liên Quân Mod Skin</h1>
+            <p>Phiên bản 1.62.11625414</p>
+            <p>Ngày cập nhật 10/5/2026</p>
+            <p>Dung lượng 228.6 MB</p>
+        </div>
+
+        <!-- Bên phải -->
+        <div class="links-side">
+            <a href="#" class="link-card">
+                <i class="fas fa-gamepad"></i>
+                <div class="link-text">
+                    <h3>Cài Đặt Ngay</h3>
+                </div>
+            </a>
+            <a href="https://link4m.com/4mhxu4U" class="link-card">
+                <i class="fas fa-mobile-alt"></i>
+                <div class="link-text">
+                    <h3>Cài Đặt IPA</h3>
+                </div>
+            </a>
+            <a><strong>HƯỚNG DẪN CÀI ĐẶT</strong></a>
+            <p>1. Nhấn Cài đặt ngay và quay lại màn hình chính.</p>
+            <p>2. Mở Cài đặt > Cài đặt chung.</p>
+            <p>3. Chọn Quản lý VPN & Thiết bị.</p>
+            <p>4. Tin cậy chứng chỉ</p>
+                </div>
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
